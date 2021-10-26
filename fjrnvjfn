@@ -1,0 +1,16 @@
+char clave[]=jPasswordField1.getPassword();
+
+   String clavedef=new String(clave);
+
+
+  if (usuario.getText().equals("Administrador") && clavedef.equals("12345")){
+        Pagina1 inicio = new Pagina1 ();
+        inicio.setVisible(true);
+   }else {
+
+          JOptionPane.showMessageDialog(null, "Acceso denegado:\n"
+          + "Por favor ingrese un usuario y/o contraseña correctos",  
+          "Acceso denegado", JOptionPane.ERROR_MESSAGE);
+            
+
+       } 
